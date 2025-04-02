@@ -52,7 +52,7 @@ const EditPost = () => {
         // console.log(data)
         //img upload
         try{
-          const imgUpload=await axios.post(URL+"/api/upload",data)
+          const imgUpload=await axios.post(URL+"/api/upload",data, { withCredentials: true })
           // console.log(imgUpload.data)
         }
         catch(err){
